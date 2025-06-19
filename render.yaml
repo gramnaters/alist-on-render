@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: alist
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 5244
